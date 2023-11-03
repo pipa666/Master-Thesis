@@ -60,6 +60,7 @@
 style=apa
 ]{biblatex}%
 \addbibresource{myref.bib}
+\addbibresource{references.bib}
 %%%%
 
 %%%%%=============================================================================%%%%
@@ -144,63 +145,63 @@ utilized GPT-4 to craft personalized case scenarios tailored for their coursewor
 
 \section{Introduction}\label{Introduction}
 % Should I put many references, or a single main one is prefered?
-During the last years, Large Language Models (LLMs) such as GPT-4 have significantly evolved into systems capable of performing various natural language tasks \parencite{brown_language_2020}. More interestingly, they have shown emergent features as they are able to perform tasks that were not originally part, or expected, of the design \parencite{wei_emergent_2022}. Their ability to adapt for different tasks without requiring exhaustive re-design of their architectures, combined with their potential to serve as building blocks for task-specific Artificial Intelligence (AI) tools, has led researchers to classify them as a general purpose technology \parencite{eloundou_gpts_2023}. 
+%P1 Recent developments in LLMs and emergent properties 
+During the last years, Large Language Models (LLMs) such as GPT-4 have significantly evolved into systems capable of performing various natural language tasks \parencite{brown_language_2020}. More interestingly, they have shown emergent features as they are able to perform tasks that were not originally part, or expected, of the design \parencite{wei_emergent_2022}. Their ability to adapt for different tasks without requiring exhaustive re-design of their architectures, combined with their potential to serve as building blocks for task-specific Artificial Intelligence (AI) tools, has led researchers to classify them as a general purpose technology \parencite{eloundou_gpts_2023}. Notably, GPT-3 can adapt to new tasks using an approach known as \textit{In-context learning}---relying on natural language descriptions of the task---an ability that it's predecessor, GPT-2 (with fewer training parameters and data) struggles to perform consistently \parencite{bommasani_opportunities_2022, wei_emergent_2022}. 
+%P2 Potential for specific tools design with lower technical entry-level 
+These capabilities present wide opportunities in both design and application. Given that state-of-the-art models do not require advanced technical programming skills, professionals from different domains might now tailor customized tools that align closely with their contexts, needs, and specialized approaches \parencite{cain_gpteammate_2023}. Andrew Ng, a leading expert in the field has stated recently that a new breed of prompt-based AI applications might be designed in few hours, even minutes, just by providing natural language descriptions of the tasks \parencite{unknown-author-2023} and this study will exemplifies such developments. Altogether, a new wave of LLMs-based AI applications is on the horizon, with many speculated to be influential in the near to mid future.\parencite{bommasani_opportunities_2022, bubeck_sparks_2023}.
 
-These developments have the potential to facilitate a broader use of more straightforward, localized, and task-specific AI tools \parencite{bubeck_sparks_2023}. Given that state-of-the-art models do not require advanced technical programming skills, professionals from different domains might now tailor customized tools that align closely with their contexts, needs, and specialized approaches \parencite{cain_gpteammate_2023}. Andrew Ng, a leading expert in the field has stated recently that a new breed of prompt-based AI applications might be designed in shorter and easier fashions \parencite{YouTube_2023} and this study will provide an example of that. Altogether, a new wave of LLMs-based AI applications is emerging, with many possible applications already speculated to become influential in the near to mid future.\parencite{bommasani_opportunities_2022}.
+%P3 Digital Technologies in reshaping education and recent AI integration and the current hype is promting different stakeholders to integrate the new tool into their learning processes. 
+In the field of education, the rise of Information and Communication Technologies has reshaped and enriched the educational landscape for decades \parencite{higgins_impact_2012}. Digitalization has led to the integration of programming and technology courses in schools, as well as innovative learning approaches, such as maker education \parencite{blikstein2013digital}. More recently, AI-based systems and tools have been extensively integrated in administration, instruction, and learning \parencite{chen_application_2020} and a growing body of research around AI in Education (AIEd) is laying the foundations for a new specific sub-field of AI research \parencite{niemi_ai_2023}.  Given these advancements, educators, administrators, entrepreneurs, and policy-makers are poised to further integrate emerging technologies into their pedagogical practices, shaping the future educational landscape.
 
-In the field of education, the rise of Information and Communication Technologies has reshaped and enriched the educational landscape for decades \parencite{higgins_impact_2012}. Digitalization has led to the integration of programming and technology courses in schools, as well as innovative learning approaches, such as maker education \parencite{blikstein2013digital}. More recently, AI-based systems and tools have been extensively integrated in administration, instruction, and learning \parencite{chen_application_2020} and a growing body of research around AI in Education (AIEd) is laying the foundations for a new specific sub-field of AI research \parencite{niemi_ai_2023}. 
+%P4 The mere presence of technology doesn’t guarantee favorable outcomes, there needs to be a thoughtful design  
+Although technology offers many tools and opportunities, its mere presence does not assure enhanced educational experiences. Thoughtful integration is essential, as research of digital technologies in education indicates that their effectiveness is often tied more to the quality of design and implementation, rather than just availability for use \parencite{higgins_impact_2012}. Similar observations have been made for interventions involving AI \parencite{holmes_state_2022}. A deeper understanding of student-technology interactions its necessary to guide the design of improved educational tools and foster better learning experiences. 
 
-Nevertheless, while technology offers many tools and opportunities, its presence isn't a guarantee of improved educational experiences, and similar observations have been made for interventions involving AI \parencite{holmes_state_2022}.  A deeper understanding of how students interact with technological tools can support the design of enhanced specific educational tools and promote favorable outcomes." 
+% P5 There is a lack of empirical research in LLMs use in education 
+Unfortunately, empirical studies on LLMs' impact in educational environments remain sparse \parencite{montenegro-rueda_impact_2023, lo_what_2023}. Since the launch of "ChatGPT" (based on GPT-3) earlier this year, there has been a rapid growth in reported educational uses and impacts, though they remain somewhat limited in scope. Predominantly, existing research either evaluates GPT's performance on traditional assessment methods \parencite{nisar_is_2023}  or delves into theoretical exploration of its potential opportunities and challenges \parencite{cain_gpteammate_2023} . Only a select few of them have explored empirical outcomes of granting students unrestricted use of LLMs in their learning process, with the results appearing optimistic \parencite{fauzi_analysing_2023, yilmaz_effect_2023}. More broadly, literature review in AIEd  underscores the necessity for more hands-on educational research approaches and a wider array of analytical methods and data gathering techniques \parencite{zawacki-richter_systematic_2019, holmes_state_2022}. Notably, a significant gap exists within physical educational spaces, as we could not find empirical studies that specifically crafted a methodical design or purposeful approach for LLMs' integration.
 
-Furthermore, debates have arisen regarding the adequacy of our previous approaches to digital technologies in understanding Human-AI interactions, both in general use and in learning environments . One of such approaches centers on the research around \textit{Computational Thinking}. Originally intended to describe specific competencies in programming, its definition has since evolved and sparked debate. While some regard it as a universal skill useful for numerous tasks in our digital society \parencite{wing_computational_2006}, there is ongoing discussion on its definition and measurements \parencite{MorenoLen2018OnCT} . Additionally, the underlying nature of AI has triggered major changes in computation that demands for an updated understanding for the Computational Thinking framework, particularly in the educational landscape due to its current influence in curriculum design\parencite{tedre_ct_2021}. 
+\subsection{Approach}\label{Approach}  WHAT - HOW - WHY
+In light of the recent surge in LLMs deployment and the scarcity of solid empirical and theoretical insights, we opted to conduct an exploratory empirical study to analyze human-AI interactions within an educational environment.
+% P1 Our context - Higher education course regarding AI in education
+The study was conducted in an on-campus doctoral course titled “Basics of AI in education”, designed to explore and discuss both historical and contemporary developments of AIEd. It covered an overview of the historical technical evolution of AIEd systems, examination of current popular systems, like AI-tutors and GPT models, a review of the intersection between AI and cognitive sciences, as well as a discussion of emerging ethical concerns and regulatory developments. 
 
-Yet, within both the AIEd and Computational Thinking body of research there is a notable absence of educational specialists representation, a scarcity of qualitative and mixed-methods studies, and a limited variety in data gathering approaches. Particularly relevant is the lack of experiences in physical learning environments and objectives that extend beyond just enhancing students' academic performance \parencite{zawacki-richter_systematic_2019, holmes_state_2022, grover_computational_2013}. 
+The course assignments were designed to explore hypothetical AIEd scenarios. For this purpose the students where asked to describe a study and write a reflective essay about a specific scenario. Observing the capabilities mentioned above, we found it intriguing to explore a way that the students could craft their hypothetical scenarios with the use of GPT-4. 
 
-This study focuses on exploring the use of Large Language Models, in this case GPT-4, for the co-creation of personalized case scenarios in a Higher Education course and its connections with Computational Thinking Skills. It also aims to engage educational specialists in speculative reflection about the future of AI in education. Our research not only aims to pave the way for innovative designs that enrich and personalize physical learning experiences using AI tools but also to inspire deeper exploration into the vast potentials of integrating AI in educational settings. 
+With the purpose of gathering empirical data in a controlled fashion, and orienting the students through the use of GPT-4, we designed a specific guided interaction that consisted of a set of prompting templates and keywords to be used. By doing this, we aimed to restrict our research focus on the students behavior within a limited set of actions. To conceive the design we had two guiding frameworks, Information Foraging and Computational thinking
 
-\section{Related Work}\label{Related Work}
-Im talking about what we have done here - not necessarily what others did
+%% I LEFT IT HERE
 
-Ive done this - and this ppl did this other thing - and this is how it relates   : This keeps it specific and relevant to my work
-
-
-\subsection{Large Language Models}\label{Large Language Models}
-
-\begin{itemize}
-  \item Capabilities
-
-GPT (Generative Pre-Trained) language models are a particular class of AI systems, distinguished by their capability of generating human-like text from a given prompt. They are able to perform a variety of tasks, from translation to text summarization and question answering, often surpassing than human-average performance \parencite{srivastava_beyond_2022}.  As the volume of training data and trained model parameters has increased, their adaptability to tasks beyond their initial training scope has expanded impressively.  Notably, GPT-3 can adapt to new tasks using an approach known as \textit{In-context learning}---relying on natural language descriptions of the task---an ability that it's predecessor, GPT-2 (with fewer training parameters and data) struggles to perform consistently \parencite{bommasani_opportunities_2022, wei_emergent_2022}. GPT-4 has further improved current capabilities in every measured metric so far \parencite{openai2023gpt4}. Current benchmarks, however,  appear to be insufficient in fully measuring it's capabilities. They rely mostly on syntactic accuracy, overlooking the nuanced semantic value of the generated texts \parencite{bubeck_sparks_2023}.  The evolution of GPT, combined with the widespread use of its free chatbot application, ChatGPT, and debate about it's intelligence, or lack of it, has garnered substantial public attention, and the novelty effects on its applications and public reactions can't be underestimated.
-
-  \item Prompt-based applications (maybe just a short mention in the capabilities, since there is not much references on this)
-
-\end{itemize}
-
-y have been able to engage efficiently into tasks that were extend beyond their originally intended use or training purposes.
-
-
-\subsection{Information Foraging}\label{Information Foraging}
-\begin{itemize}
-    \item What is it : Multidisciplinary behavioral studies/models on search
-    \item Why for us: Crossing s with digital information search and decision making in digital/conceptual environments
-
-\end{itemize}
+and how computational thinking skills, with predominancy in digital education research, may influence and modelate the student's behavior.
 
 
 
-\subsection{Computational Thinking}\label{Computational Thinking}
 
-\begin{itemize}
-    \item What is it: Development and Wei's foundational poster
-    \item Why for us: It's relevance in interactions with digital tools/environments
-\end{itemize}
+% P2 Information Foraging as guiding theory
+As starting point, we decided to draw on two interesting approaches to explore Human-AI dynamics in education, Computational Thinking and Information Foraging. 
 
-\subsection{Speculative Methods}\label{Speculative Methods}
+% P3 Computational Thinking as a modulator for the interaction behavior
 
-\begin{itemize}
-    \item What it is :Development in social sciences and extension
-    \item  Extension towards digital education research
-    \item Why for us: Educational specialists views on the future gives insight on the current future-paving processes.
-\end{itemize}
+
+%Yet, within both the AIEd body of research there is a notable absence of educational specialists representation, a scarcity of qualitative and mixed-methods studies, and a limited variety in data gathering approaches. Particularly relevant is the lack of experiences in physical learning environments and objectives that extend beyond just enhancing students' academic performance \parencite{zawacki-richter_systematic_2019, holmes_state_2022, grover_computational_2013}. 
+
+
+
+
+%PX - Our Focus
+This study focuses on exploring the interaction between students and LLMs, in this case GPT-4, for the co-creation of personalized case scenarios in a Higher Education course and its connections with Computational Thinking Skills. It also aims to engage educational specialists in speculative reflection about the future of AI in education. Our research not only aims to pave the way for innovative designs that enrich and personalize physical learning experiences using AI tools but also to inspire deeper exploration into the vast potentials of integrating AI in educational settings. 
+
+
+%Furthermore, debates have arisen regarding the adequacy of our previous approaches to digital technologies in understanding Human-AI interactions, both in general use and in learning environments . One of such approaches centers on the research around \textit{Computational Thinking}. Originally intended to describe specific competencies in programming, its definition has since evolved and sparked debate. While some regard it as a universal skill useful for numerous tasks in our digital society \parencite{wing_computational_2006}, there is ongoing discussion on its definition and measurements \parencite{MorenoLen2018OnCT} . Additionally, the underlying nature of AI has triggered major changes in computation that demands for an updated understanding for the Computational Thinking framework, particularly in the educational landscape due to its current influence in curriculum design\parencite{tedre_ct_2021}. To clarify the debate and deepen our knowledge in digital technologies, new studies should explore the relations between such frameworks and the most recent technological tools within grounded educational interventions. 
+
+
+
+
+%GPT (Generative Pre-Trained) language models are a particular class of AI systems, distinguished by their capability of generating human-like text from a given prompt. They are able to perform a variety of tasks, from translation to text summarization and question answering, often surpassing than human-average performance \parencite{srivastava_beyond_2022}.  As the volume of training data and trained model parameters has increased, their adaptability to tasks beyond their initial training scope has expanded impressively.  GPT-4 has further improved current capabilities in every measured metric so far \parencite{openai2023gpt4}. Current benchmarks, however,  appear to be insufficient in fully measuring it's capabilities. They rely mostly on syntactic accuracy, overlooking the nuanced semantic value of the generated texts \parencite{bubeck_sparks_2023}.  The evolution of GPT, combined with the widespread use of its free chatbot application, ChatGPT, and debate about it's intelligence, or lack of it, has garnered substantial public attention, and the novelty effects on its applications and public reactions can't be underestimated.
+
+
+%\subsection{Speculative Methods}\label{Speculative Methods}
+%What it is :Development in social sciences and extension
+%Extension towards digital education research
+%Why for us: Educational specialists views on the future gives insight on the current future-paving processes.
 
 In this study, we explore the gathered behavioral data from the participants' interaction with GPT-4, it's associations with their self-reported Computational Thinking Skills, and their speculations about potential futures in AIEd.
 \begin{enumerate}
@@ -236,9 +237,12 @@ In this study, we explore the gathered behavioral data from the participants' in
 
 \section{Methods}\label{Methods}
 
-\subsubsection{Interaction design}\label{Interaction design}
-
-
+\subsection{Design}\label{Interaction design}
+\subsubsection{Prompting templates}
+% Templates defined by 2 types of actions and categorization
+\subsubsection{Keywords}
+%Interests assigment should go here
+\subsubsection{Interaction}
 
 \subsection{Quantitative analysis - Network Analysis}\label{Quantitative Analysis}
 
@@ -254,6 +258,7 @@ Discussions should be brief and focused. In some disciplines use of Discussion o
 
 
 \subsection{Limitations}\label{Limitations}
+
 \subsection{Further Lines of Research}\label{Further Lines of Research}
 
 \subsection{Conclusion}\label{Conclusion}
