@@ -1,0 +1,271 @@
+%Version 2.1 April 2023
+% See section 11 of the User Manual for version history
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%\documentclass[referee,sn-basic]{sn-jnl}% referee option is meant for double line spacing
+
+%%=======================================================%%
+%% to print line numbers in the margin use lineno option %%
+%%=======================================================%%
+
+%%\documentclass[lineno,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+%%======================================================%%
+%% to compile with pdflatex/xelatex use pdflatex option %%
+%%======================================================%%
+
+%%\documentclass[pdflatex,sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+
+
+%%Note: the following reference styles support Namedate and Numbered referencing. By default the style follows the most common style. To switch between the options you can add or remove Numbered in the optional parenthesis. 
+%%The option is available for: sn-basic.bst, sn-vancouver.bst, sn-chicago.bst, sn-mathphys.bst. %  
+ 
+%%\documentclass[sn-nature]{sn-jnl}% Style for submissions to Nature Portfolio journals
+%%\documentclass[sn-basic]{sn-jnl}% Basic Springer Nature Reference Style/Chemistry Reference Style
+\documentclass[sn-mathphys, Numbered]{sn-jnl}% Math and Physical Sciences Reference Style
+%%\documentclass[sn-aps]{sn-jnl}% American Physical Society (APS) Reference Style
+%%\documentclass[sn-vancouver,Numbered]{sn-jnl}% Vancouver Reference Style
+%%\documentclass[sn-apa]{sn-jnl}% APA Reference Style 
+%%\documentclass[sn-chicago]{sn-jnl}% Chicago-based Humanities Reference Style
+%%\documentclass[default]{sn-jnl}% Default
+%%\documentclass[default,iicol]{sn-jnl}% Default with double column layout
+
+%%%% Standard Packages
+%%<additional latex packages if required can be included here>
+
+\usepackage{graphicx}%
+\usepackage{multirow}%
+\usepackage{amsmath,amssymb,amsfonts}%
+\usepackage{amsthm}%
+\usepackage{mathrsfs}%
+\usepackage[title]{appendix}%
+\usepackage{xcolor}%
+\usepackage{textcomp}%
+\usepackage{manyfoot}%
+\usepackage{booktabs}%
+\usepackage{algorithm}%
+\usepackage{algorithmicx}%
+\usepackage{algpseudocode}%
+\usepackage{listings}%
+\usepackage[
+style=apa
+]{biblatex}%
+\addbibresource{myref.bib}
+%%%%
+
+%%%%%=============================================================================%%%%
+%%%%  Remarks: This template is provided to aid authors with the preparation
+%%%%  of original research articles intended for submission to journals published 
+%%%%  by Springer Nature. The guidance has been prepared in partnership with 
+%%%%  production teams to conform to Springer Nature technical requirements. 
+%%%%  Editorial and presentation requirements differ among journal portfolios and 
+%%%%  research disciplines. You may find sections in this template are irrelevant 
+%%%%  to your work and are empowered to omit any such section if allowed by the 
+%%%%  journal you intend to submit to. The submission guidelines and policies 
+%%%%  of the journal take precedence. A detailed User Manual is available in the 
+%%%%  template package for technical guidance.
+%%%%%=============================================================================%%%%
+
+%\jyear{2023}%
+
+%% as per the requirement new theorem styles can be included as shown below
+\theoremstyle{thmstyleone}%
+\newtheorem{theorem}{Theorem}%  meant for continuous numbers
+%%\newtheorem{theorem}{Theorem}[section]% meant for sectionwise numbers
+%% optional argument [theorem] produces theorem numbering sequence instead of independent numbers for Proposition
+\newtheorem{proposition}[theorem]{Proposition}% 
+%%\newtheorem{proposition}{Proposition}% to get separate numbers for theorem and proposition etc.
+
+\theoremstyle{thmstyletwo}%
+\newtheorem{example}{Example}%
+\newtheorem{remark}{Remark}%
+
+\theoremstyle{thmstylethree}%
+\newtheorem{definition}{Definition}%
+
+\raggedbottom
+%%\unnumbered% uncomment this for unnumbered level heads
+
+\begin{document}
+
+\title[Article Title]{Exploring the Use of GPT-4  in Co-creating Personalized Case Scenarios for Higher Education. }
+
+%%=============================================================%%
+%% Prefix	-> \pfx{Dr}
+%% GivenName	-> \fnm{Joergen W.}
+%% Particle	-> \spfx{van der} -> surname prefix
+%% FamilyName	-> \sur{Ploeg}
+%% Suffix	-> \sfx{IV}
+%% NatureName	-> \tanm{Poet Laureate} -> Title after name
+%% Degrees	-> \dgr{MSc, PhD}
+%% \author*[1,2]{\pfx{Dr} \fnm{Joergen W.} \spfx{van der} \sur{Ploeg} \sfx{IV} \tanm{Poet Laureate} 
+%%                 \dgr{MSc, PhD}}\email{iauthor@gmail.com}
+%%=============================================================%%
+
+\author*[1]{\fnm{Pablo} \sur{Flores}}\email{pablo.flores@helsinki.fi}
+
+\author[1]{\fnm{Guang} \sur{Rong}}\email{guang.rong@helsinki.fi }
+
+\author[1,2]{\fnm{Benjamin Ultan} \sur{Cowley}}\email{ben.cowley@helsinki.fi}
+
+
+\affil*[1]{\orgdiv{Faculty of Educational Sciences}, \orgname{University of Helsinki}, \orgaddress{\street{Siltavuorenperger 5}, \city{Helsinki}, \postcode{00014 },  \country{Finland}}}
+\affil*[2]{\orgdiv{Cognitive Science, Faculty of Arts}, \orgname{University of Helsinki}}
+
+
+%%==================================%%
+%% sample for unstructured abstract %%
+%%==================================%%
+
+\abstract{In the fast evolving landscape of Artificial Intelligence in Education (AIEd) Large Language Models (LLMs) like GPT-4 have emerged as powerful and versatile tools capable of  adapting for a wide set of natural language tasks. This study explores into an interaction design where higher education students 
+%Consider changing the "HE students" for Educational Researchers
+utilized GPT-4 to craft personalized case scenarios tailored for their coursework. This process not only facilitates tailored learning experiences, but also engaged students into speculative reflections about the potential futures of AIEd  ...................... Add up on results and conclusions when done}
+
+%%================================%%
+%% Sample for structured abstract %%
+%%================================%%
+
+\keywords{ChatGPT, Large Language Models, Higher Education, Human-AI Co-creation ,Personalized Learning, Speculative Scenarios}
+
+%%\pacs[JEL Classification]{D8, H51}
+
+%%\pacs[MSC Classification]{35A01, 65L10, 65L12, 65L20, 65L70}
+
+\maketitle
+
+\section{Introduction}\label{Introduction}
+% Should I put many references, or a single main one is prefered?
+During the last years, Large Language Models (LLMs) such as GPT-4 have significantly evolved into systems capable of performing various natural language tasks \parencite{brown_language_2020}. More interestingly, they have shown emergent features as they are able to perform tasks that were not originally part, or expected, of the design \parencite{wei_emergent_2022}. Their ability to adapt for different tasks without requiring exhaustive re-design of their architectures, combined with their potential to serve as building blocks for task-specific Artificial Intelligence (AI) tools, has led researchers to classify them as a general purpose technology \parencite{eloundou_gpts_2023}. 
+
+These developments have the potential to facilitate a broader use of more straightforward, localized, and task-specific AI tools \parencite{bubeck_sparks_2023}. Given that state-of-the-art models do not require advanced technical programming skills, professionals from different domains might now tailor customized tools that align closely with their contexts, needs, and specialized approaches \parencite{cain_gpteammate_2023}. Andrew Ng, a leading expert in the field has stated recently that a new breed of prompt-based AI applications might be designed in shorter and easier fashions \parencite{YouTube_2023} and this study will provide an example of that. Altogether, a new wave of LLMs-based AI applications is emerging, with many possible applications already speculated to become influential in the near to mid future.\parencite{bommasani_opportunities_2022}.
+
+In the field of education, the rise of Information and Communication Technologies has reshaped and enriched the educational landscape for decades \parencite{higgins_impact_2012}. Digitalization has led to the integration of programming and technology courses in schools, as well as innovative learning approaches, such as maker education \parencite{blikstein2013digital}. More recently, AI-based systems and tools have been extensively integrated in administration, instruction, and learning \parencite{chen_application_2020} and a growing body of research around AI in Education (AIEd) is laying the foundations for a new specific sub-field of AI research \parencite{niemi_ai_2023}. 
+
+Nevertheless, while technology offers many tools and opportunities, its presence isn't a guarantee of improved educational experiences, and similar observations have been made for interventions involving AI \parencite{holmes_state_2022}.  A deeper understanding of how students interact with technological tools can support the design of enhanced specific educational tools and promote favorable outcomes." 
+
+Furthermore, debates have arisen regarding the adequacy of our previous approaches to digital technologies in understanding Human-AI interactions, both in general use and in learning environments . One of such approaches centers on the research around \textit{Computational Thinking}. Originally intended to describe specific competencies in programming, its definition has since evolved and sparked debate. While some regard it as a universal skill useful for numerous tasks in our digital society \parencite{wing_computational_2006}, there is ongoing discussion on its definition and measurements \parencite{MorenoLen2018OnCT} . Additionally, the underlying nature of AI has triggered major changes in computation that demands for an updated understanding for the Computational Thinking framework, particularly in the educational landscape due to its current influence in curriculum design\parencite{tedre_ct_2021}. 
+
+Yet, within both the AIEd and Computational Thinking body of research there is a notable absence of educational specialists representation, a scarcity of qualitative and mixed-methods studies, and a limited variety in data gathering approaches. Particularly relevant is the lack of experiences in physical learning environments and objectives that extend beyond just enhancing students' academic performance \parencite{zawacki-richter_systematic_2019, holmes_state_2022, grover_computational_2013}. 
+
+This study focuses on exploring the use of Large Language Models, in this case GPT-4, for the co-creation of personalized case scenarios in a Higher Education course and its connections with Computational Thinking Skills. It also aims to engage educational specialists in speculative reflection about the future of AI in education. Our research not only aims to pave the way for innovative designs that enrich and personalize physical learning experiences using AI tools but also to inspire deeper exploration into the vast potentials of integrating AI in educational settings. 
+
+\section{Related Work}\label{Related Work}
+Im talking about what we have done here - not necessarily what others did
+
+Ive done this - and this ppl did this other thing - and this is how it relates   : This keeps it specific and relevant to my work
+
+
+\subsection{Large Language Models}\label{Large Language Models}
+
+\begin{itemize}
+  \item Capabilities
+
+GPT (Generative Pre-Trained) language models are a particular class of AI systems, distinguished by their capability of generating human-like text from a given prompt. They are able to perform a variety of tasks, from translation to text summarization and question answering, often surpassing than human-average performance \parencite{srivastava_beyond_2022}.  As the volume of training data and trained model parameters has increased, their adaptability to tasks beyond their initial training scope has expanded impressively.  Notably, GPT-3 can adapt to new tasks using an approach known as \textit{In-context learning}---relying on natural language descriptions of the task---an ability that it's predecessor, GPT-2 (with fewer training parameters and data) struggles to perform consistently \parencite{bommasani_opportunities_2022, wei_emergent_2022}. GPT-4 has further improved current capabilities in every measured metric so far \parencite{openai2023gpt4}. Current benchmarks, however,  appear to be insufficient in fully measuring it's capabilities. They rely mostly on syntactic accuracy, overlooking the nuanced semantic value of the generated texts \parencite{bubeck_sparks_2023}.  The evolution of GPT, combined with the widespread use of its free chatbot application, ChatGPT, and debate about it's intelligence, or lack of it, has garnered substantial public attention, and the novelty effects on its applications and public reactions can't be underestimated.
+
+  \item Prompt-based applications (maybe just a short mention in the capabilities, since there is not much references on this)
+
+\end{itemize}
+
+y have been able to engage efficiently into tasks that were extend beyond their originally intended use or training purposes.
+
+
+\subsection{Information Foraging}\label{Information Foraging}
+\begin{itemize}
+    \item What is it : Multidisciplinary behavioral studies/models on search
+    \item Why for us: Crossing s with digital information search and decision making in digital/conceptual environments
+
+\end{itemize}
+
+
+
+\subsection{Computational Thinking}\label{Computational Thinking}
+
+\begin{itemize}
+    \item What is it: Development and Wei's foundational poster
+    \item Why for us: It's relevance in interactions with digital tools/environments
+\end{itemize}
+
+\subsection{Speculative Methods}\label{Speculative Methods}
+
+\begin{itemize}
+    \item What it is :Development in social sciences and extension
+    \item  Extension towards digital education research
+    \item Why for us: Educational specialists views on the future gives insight on the current future-paving processes.
+\end{itemize}
+
+In this study, we explore the gathered behavioral data from the participants' interaction with GPT-4, it's associations with their self-reported Computational Thinking Skills, and their speculations about potential futures in AIEd.
+\begin{enumerate}
+    \item[] \textbf{RQ1.} How does the students' Computational Thinking Skills influence their co-creation behavioral interactions with GPT-4
+    \begin{enumerate}
+        \item[] Alternatives:
+        \begin{enumerate}
+            \item  Through which behaviors do students showcase their Computational Thinking skills during their engagement with GPT-4?
+            \item How are students' Computational Thinking skills reflected in their interactions with GPT-4? 
+            \item In what ways do students demonstrate Computational Thinking skills when engaging with GPT-4 in a structured setting? 
+        \end{enumerate}
+    \end{enumerate}
+    \item[] \textbf{RQ2.} What kind of educational research do educational specialists devise for the application of Artificial Intelligence in education?
+    \begin{enumerate}
+        \item[] Alternatives
+        \begin{enumerate}
+            \item What are the predominant themes or focuses in the research envisioned by educational specialists regarding Artificial Intelligence in education? 
+        \end{enumerate}
+    \end{enumerate}
+    \item [] \textbf{RQ3.} What kind of pedagogical value, or lack of it, do educational specialist envision in the development and integration of AI in education?
+    \begin{enumerate}
+        \item [] Alternatives
+        \begin{enumerate}
+            \item To what extent do educational specialists foresee AI influencing pedagogical outcomes in educational contexts?
+            \item What are the anticipated pedagogical benefits and challenges of AI integration as envisioned by educational specialists? 
+        \end{enumerate}
+    \end{enumerate}
+
+\end{enumerate}
+\textit{Note, alternatives chosen by a set of alternatives co-created with GPT-4 }
+
+
+
+\section{Methods}\label{Methods}
+
+\subsubsection{Interaction design}\label{Interaction design}
+
+
+
+\subsection{Quantitative analysis - Network Analysis}\label{Quantitative Analysis}
+
+\subsection{Qualitative analysis- Content Analysis}\label{Qualitative Analysis}
+
+
+
+\section{Results}\label{Results}
+
+\section{Discussion}\label{Discussion}
+
+Discussions should be brief and focused. In some disciplines use of Discussion or `Conclusion' is interchangeable. It is not mandatory to use both. Some journals prefer a section `Results and Discussion' followed by a section `Conclusion'. Please refer to Journal-level guidance for any specific requirements. 
+
+
+\subsection{Limitations}\label{Limitations}
+\subsection{Further Lines of Research}\label{Further Lines of Research}
+
+\subsection{Conclusion}\label{Conclusion}
+
+Conclusions may be used to restate your hypothesis or research question, restate your major findings, explain the relevance and the added value of your work, highlight any limitations of your study, describe future directions for research and recommendations. 
+
+In some disciplines use of Discussion or 'Conclusion' is interchangeable. It is not mandatory to use both. Please refer to Journal-level guidance for any specific requirements. 
+
+
+\printbibliography
+%% if required, the content of .bbl file can be included here once bbl is generated
+%%\input sn-article.bbl
+
+
+\end{document}
