@@ -146,7 +146,9 @@ utilized GPT-4 to craft personalized case scenarios tailored for their coursewor
 \section{Introduction}
 
 % Digital tech in education - reshaping the landscape.
-Upon every technological breakthrough, the educational domain reconsiders its methods and strategies. During the recent decades, the rise of digital technologies has reshaped the educational landscape. Evidence from the past 40 years on educational technologies impact consistently indicates positive benefits from its integration \parencite{higgins_impact_2012}.  This digital evolution has fostered the integration of programming and technology courses in schools, as well as innovative learning approaches, such as maker education \parencite{blikstein2013digital}. While digital technologies might spark motivation and engagement in young students, its mere adoption does not ensure favorable outcomes.  To fully embrace their potential, a deliberate pedagogical approach is essential, especially when transitioning from traditional to modern educational approaches \parencite{parker_authentic_2020,khaddage_bridging_2021} . 
+Upon every technological breakthrough, the educational domain reconsiders its methods and strategies. During the recent decades, the rise of digital technologies has reshaped the educational landscape. Evidence from the past 40 years on educational technologies impact consistently indicates positive benefits from its integration in programming courses or through innovative approaches \parencite{higgins_impact_2012}.  
+%This digital evolution has fostered the integration of programming and technology courses in schools, as well as innovative learning approaches, such as maker education \parencite{blikstein2013digital}.
+However, while digital technologies might spark motivation and engagement in young students, its mere adoption does not ensure favorable outcomes.  To fully embrace their potential, a deliberate pedagogical approach is essential, especially when transitioning from traditional to modern educational approaches \parencite{parker_authentic_2020,khaddage_bridging_2021} . 
 
 % AIEd - Extensive, but limited, integration of recent new technologies
 As part of the larger digital transformation, Artificial-Intelligence (AI)-based systems have emerged as important players in the educational domain. These systems have found extensive use in administration, instruction, and learning \parencite{chen_application_2020}, accompanied by a growing body of research around AI in Education (AIEd), a distinct sub-field of digital learning research \parencite{niemi_ai_2023}.  But despite the wide range of potential applications of AI-based systems, they have been mostly implemented to facilitate, or automate, mainstream learning approaches. While useful, this approach sidelines teachers agency, experience, and creativity to integrate such technologies into their unique practices and pedagogical designs. \parencite{holmes_artificial_2023}
@@ -159,47 +161,51 @@ One of such evolution are Large Language Models (LLMs) such as OpenAI's Generati
 These capabilities present wide opportunities in both design and application. Given that state-of-the-art models do not require advanced technical programming skills, professionals from different domains might now tailor customized tools that align closely with their contexts, needs, and specialized approaches \parencite{cain_gpteammate_2023}. Andrew Ng, a leading expert in the field has stated recently that a new breed of prompt-based AI applications might be designed in a few hours, even minutes, just by providing natural language descriptions of the tasks \parencite{unknown-author-2023} and this study will exemplify such developments. Altogether, a new wave of LLMs-based AI applications is on the horizon, with many speculated to be influential in the near to mid future.\parencite{bommasani_opportunities_2022, bubeck_sparks_2023}. 
 
 % P4 - ChatGPT - Free and widespread chatbot application of GPT-4. Conversational dynamic
-Due to its versatility and accessibility, OpenAI's "ChatGPT" has become the fastest-growing application in history since its launch on late 2022 \parencite{milmo_chatgpt_2023}. As a conversational chatbot, it uses natural language processing to understand and generate human-like text in a dialectical fashion. By providing certain input (prompts) ChatGPT can answer different kinds of questions. Additionally, by using advanced prompting methods users can improve its performance in a wide range of tasks \parencite{wei_chain--thought_2023,fernando_promptbreeder_2023}. Potential educational uses involve teaching preparation (Generation of course materials, providing suggestions); Assessment (Generation of exercises or case scenarios, providing feedback); Learning support (Answering questions, Summarising information) among others \parencite{lo_what_2023,montenegro-rueda_impact_2023}.  However, educational research remains sparse and focuses predominantly in theoretically exploring its potential and limitations \parencite{qadir_engineering_2022,cain_gpteammate_2023}, and assessing its performance on traditional assessment methods \parencite{nisar_is_2023}. Due to its novelty, a gap in exploratory empirical studies is evident.
+Due to its versatility and accessibility, OpenAI's "ChatGPT" has become the fastest-growing application in history since its launch on late 2022 \parencite{milmo_chatgpt_2023}. As a conversational chatbot, it uses natural language processing to understand and generate human-like text in a dialectical fashion. By providing certain input (prompts) ChatGPT can answer different kinds of questions. Additionally, by using advanced prompting methods users can improve its performance in a wide range of tasks \parencite{wei_chain--thought_2023,fernando_promptbreeder_2023}. Potential educational uses involve teaching preparation (generation of course materials, providing suggestions); Assessment (generation of exercises or case scenarios, providing feedback); Learning support (answering questions, summarising information) among others \parencite{lo_what_2023,montenegro-rueda_impact_2023}.  However, educational research remains sparse and focuses predominantly in theoretically exploring its potential and limitations \parencite{qadir_engineering_2022,cain_gpteammate_2023}, and assessing its performance on traditional assessment methods \parencite{nisar_is_2023}. Due to its novelty, a gap in exploratory empirical studies is evident.
 
-We focused our study on exploring the interaction between students and GPT-4 for the creation of personalized course materials in a higher education doctoral course. Our research not only aims to pave the way for innovative designs that enrich and personalize physical learning experiences using AI tools but also to inspire deeper exploration into the vast potentials of integrating AI in educational settings. 
-
-
+We focused our study on exploring the interaction between students and GPT-4 for the creation of personalized course materials in a higher education doctoral course. Our research not only aims to pave the way for innovative designs that enrich and personalize in-person learning experiences using AI tools but also to inspire deeper exploration into the vast potentials of integrating AI in educational settings. 
 
 
-\subsection{Approach}\label{Approach}  WHAT - HOW - WHY
-%% RE-THINK STRUCTURE OF THIS
 
-% P1 Our context - Higher education course regarding AI in education
+
+\subsection{Approach}\label{Approach}  
+
+%This study focuses on exploring the interaction between students and LLMs, in this case GPT-4, for the co-creation of personalized case scenarios in a Higher Education course with the aim to analyze it from an Information foraging approach and also seeing how Computational Thinking Skills may modulate this behavior
+
+% The context higher education course regarding AI in education
 The study was conducted in an on-campus doctoral course titled “Basics of AI in education”, designed to explore and discuss both historical and contemporary developments of AIEd. It covered an overview of the historical technical evolution of AIEd systems, examination of current popular systems, like AI-tutors and GPT models, a review of the intersection between AI and cognitive sciences, as well as a discussion of emerging ethical concerns and regulatory developments. 
 
-The course assignments were designed to explore hypothetical AIEd scenarios. For this purpose the students where asked to describe a study and write a reflective essay about a specific scenario. Observing the capabilities mentioned above, we found it intriguing to explore a way that the students could craft their hypothetical scenarios with the use of GPT-4. 
+% Purpose of the course - Speculative assigments - flexible topics
+The course assignments were designed to explore hypothetical scenarios about AI implementations in education. For this purpose the students where asked to individually design a study, and write a reflective essay about a specific chosen scenario. Consequently, the course topics were broad and suggestive, not focused on any pre-defined scenario, giving the students freedom to choose a scenario of their own interest. 
+
+To facilitate this, we designed a guided interaction for the students to co-create personalized hypothetical scenarios through GPT-4, which involved  pre-defined prompting templates and sets of conceptual keywords to construct final scenario generation prompts.
+
+% Study purpose - To examine the behavioral aspects of students-GPT interactions
+This design idea addresses two purposes in our study. 
+
+First, since we had a variety of GPT usage experience---and lack of it---it guided students through their scenario co-creation process. 
+
+Secondly, allows for methodical reproducible examination of the interactions, since it provides fixed rules on how to prompt. Consequently, we aim to both facilitate an easier use of GPT, balancing the students' prior experiences with it, and to examine the behavioral aspects of the interaction. 
+
+% Study design 
+Considering the conversational nature of ChatGPT, where users can prompt repeatedly for more information, we guided our design based on two theoretical frameworks, Information Foraging and Computational Thinking.
+
+
+
 
 With the purpose of gathering empirical data in a controlled fashion, and orienting the students through the use of GPT-4, we designed a specific guided interaction that consisted of a set of prompting templates and keywords to be used. By doing this, we aimed to restrict our research focus on the students behavior within a limited set of actions. To conceive the design we had two guiding frameworks, Information Foraging and Computational thinking
 
-%% I LEFT IT HERE
+% Information Foraging
 
-and how computational thinking skills, with predominancy in digital education research, may influence and modelate the student's behavior.
+% Computational Thinking
 
-% P5 Information Foraging - Useful framework to observe this type of interaction where users are looking for data with a purpose.
-
-....
-
-% P6 Computational Thinking Skills - CTS should modulate the way people interact with technology.
-
-
-
-% P2 Information Foraging as guiding theory
-
-% P3 Computational Thinking as a modulator for the interaction behavior
-
-
-
+Observing the capabilities mentioned above, we found it intriguing to explore a way that the students could craft their hypothetical scenarios with the use of GPT-4. 
 
 
 
 
 %PX - Our Focus
-This study focuses on exploring the interaction between students and LLMs, in this case GPT-4, for the co-creation of personalized case scenarios in a Higher Education course with the aim to analyze it from an Information foraging approach and also seeing how Computational Thinking Skills may modulate this behavior. 
+
 It also aims to engage educational specialists in speculative reflection about the future of AI in education. Our research not only aims to pave the way for innovative designs that enrich and personalize physical learning experiences using AI tools but also to inspire deeper exploration into the vast potentials of integrating AI in educational settings. 
 
 
