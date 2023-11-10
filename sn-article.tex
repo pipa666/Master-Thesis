@@ -157,8 +157,8 @@ As part of the larger digital transformation, Artificial-Intelligence (AI)-based
 A dominant trend has been that AIEd implementations are predominantly designed by technical teams or departments, such as those focused in Science, Technology, Engineering, and Math (STEM), leading to a notable under-representation of educational or psychological perspectives in AIEd research \parencite{holmes_state_2022, zawacki-richter_systematic_2019}. Among the probable causes of this we can highlight the lack of technical expertise, among others, which is a big barrier for educational adoption of technologies \parencite{reid_categories_2014}. However, as with other digital technologies, AI systems are evolving to become more accessible by reducing their technical entry barriers, both for casual use and for the design of new applications.
 
 %  LLMs - Recent developments offer incredible opportunities
-One of such evolution are Large Language Models (LLMs) such as OpenAI's Generative Pre-Trained (GPT) model. They have significantly evolved into systems capable of performing various natural language tasks \parencite{brown_language_2020}. Interestingly, they have shown emergent features as they are able to perform tasks that were not originally part, or expected, of the design \parencite{wei_emergent_2022}. Their ability to adapt for different tasks without requiring exhaustive re-design of their architectures, combined with their potential to serve as building blocks for task-specific AI-tools, has led to some researchers to classify them as a general purpose technology \parencite{eloundou_gpts_2023}. Notably, GPT-3 could adapt to new tasks using an approach known as \textit{In-context learning}---relying on natural language descriptions of the task---an ability that it's predecessor, GPT-2 (with fewer training parameters and data) struggles to perform consistently \parencite{bommasani_opportunities_2022, wei_emergent_2022}. Its last iteration, GPT-4, brought significant increase in performance across every measured metric \parencite{openai2023gpt4}.
-These capabilities present wide opportunities in both design and application. Given that state-of-the-art models do not require advanced technical programming skills, professionals from different domains might now tailor customized tools that align closely with their contexts, needs, and specialized approaches \parencite{cain_gpteammate_2023}. Andrew Ng, a leading expert in the field has stated recently that a new breed of prompt-based AI applications might be designed in a few hours, even minutes, just by providing natural language descriptions of the tasks \parencite{unknown-author-2023} and this study will exemplify such developments. Altogether, a new wave of LLMs-based AI applications is on the horizon, with many speculated to be influential in the near to mid future.\parencite{bommasani_opportunities_2022, bubeck_sparks_2023}. 
+One of such evolution are Large Language Models (LLMs) such as OpenAI's Generative Pre-Trained (GPT) model. They have significantly evolved into systems capable of performing various natural language tasks \parencite{brown_language_2020}. Interestingly, they have shown emergent features as they are able to perform tasks that were not originally part, or expected, of the design \parencite{wei_emergent_2022}. For example, GPT-3 could adapt to new tasks using an approach known as \textit{In-context learning}---relying on natural language descriptions of the task---an ability that it's predecessor struggles to perform consistently \parencite{brown_language_2020, wei_emergent_2022}. This adaptation for different tasks, without requiring exhaustive re-design of their architectures, combined with their potential to serve as building blocks for task-specific AI-tools has led to some researchers to classify them as foundational models \parencite{eloundou_gpts_2023, bommasani_opportunities_2022}.  Furthermore, its last iteration (GPT-4) brought a significant increase in performance across every measured metric \parencite{openai2023gpt4}.
+These capabilities present wide opportunities in both design and application. Given that state-of-the-art models do not require advanced technical programming skills, professionals from different domains might now tailor customized tools that align closely with their contexts, needs, and specialized approaches \parencite{cain_gpteammate_2023}. Building on this accessibility, OpenAI has recently announced the upcoming "GPT builder", which will enable users to tailor specific web-based GPT applications for private or shared use \parencite{openaidevshowcase, openai_introducing_2023}. Altogether, a new generation of commercial, public, and private LLMs-based AI applications is on the horizon, with many speculated to be significant in shaping the near to mid-term future \parencite{bommasani_opportunities_2022, bubeck_sparks_2023}. 
 
 % P4 - ChatGPT - Free and widespread chatbot application of GPT-4. Conversational dynamic
 Due to its versatility and accessibility, OpenAI's "ChatGPT" has become the fastest-growing application in history since its launch on late 2022 \parencite{milmo_chatgpt_2023}. As a conversational chatbot, it uses natural language processing to understand and generate human-like text in a dialectical fashion. By providing certain input (prompts) ChatGPT can answer different kinds of questions. Additionally, by using advanced prompting methods users can improve its performance in a wide range of tasks \parencite{wei_chain--thought_2023,fernando_promptbreeder_2023}. Potential educational uses involve teaching preparation (generation of course materials, providing suggestions); Assessment (generation of exercises or case scenarios, providing feedback); Learning support (answering questions, summarising information) among others \parencite{lo_what_2023,montenegro-rueda_impact_2023}.  However, educational research remains sparse and focuses predominantly in theoretically exploring its potential and limitations \parencite{qadir_engineering_2022,cain_gpteammate_2023}, and assessing its performance on traditional assessment methods \parencite{nisar_is_2023}. Due to its novelty, a gap in exploratory empirical studies is evident.
@@ -168,102 +168,80 @@ We focused our study on exploring the interaction between students and GPT-4 for
 
 
 
-\subsection{Approach}\label{Approach}  
+\subsection*{Approach}\label{Approach}  
 
 %This study focuses on exploring the interaction between students and LLMs, in this case GPT-4, for the co-creation of personalized case scenarios in a Higher Education course with the aim to analyze it from an Information foraging approach and also seeing how Computational Thinking Skills may modulate this behavior
 
 % The context higher education course regarding AI in education
-The study was conducted in an on-campus doctoral course titled “Basics of AI in education”, designed to explore and discuss both historical and contemporary developments of AIEd. It covered an overview of the historical technical evolution of AIEd systems, examination of current popular systems, like AI-tutors and GPT models, a review of the intersection between AI and cognitive sciences, as well as a discussion of emerging ethical concerns and regulatory developments. 
+The study was conducted in an on-campus doctoral course titled “Basics of AI in education”, aimed at exploring historical and contemporary AIEd developments. We covered an overview of the historical technical evolution of AIEd systems, examination of current popular systems, like performance predictors, AI-tutors and LLMs, a review of the intersection between AI and cognitive sciences, as well as a discussion of emerging ethical concerns and regulatory developments. 
 
 % Purpose of the course - Speculative assigments - flexible topics
-The course assignments were designed to explore hypothetical scenarios about AI implementations in education. For this purpose the students where asked to individually design a study, and write a reflective essay about a specific chosen scenario. Consequently, the course topics were broad and suggestive, not focused on any pre-defined scenario, giving the students freedom to choose a scenario of their own interest. 
-
-To facilitate this, we designed a guided interaction for the students to co-create personalized hypothetical scenarios through GPT-4, which involved  pre-defined prompting templates and sets of conceptual keywords to construct final scenario generation prompts.
-
-% Study purpose - To examine the behavioral aspects of students-GPT interactions
-This design idea addresses two purposes in our study. 
-
-First, since we had a variety of GPT usage experience---and lack of it---it guided students through their scenario co-creation process. 
-
-Secondly, allows for methodical reproducible examination of the interactions, since it provides fixed rules on how to prompt. Consequently, we aim to both facilitate an easier use of GPT, balancing the students' prior experiences with it, and to examine the behavioral aspects of the interaction. 
-
-% Study design 
-Considering the conversational nature of ChatGPT, where users can prompt repeatedly for more information, we guided our design based on two theoretical frameworks, Information Foraging and Computational Thinking.
+We designed the course assignments to explore hypothetical scenarios about AI implementations in education. For this purpose the students were asked to individually design a study, and write a reflective essay about a specific chosen scenario. Consequently, the course topics were broad and suggestive, not focused on any pre-defined scenario, giving the students freedom to choose a scenario of their own interest. 
+Complementing the course contents with a practical experience, we guided the students to interactively generate their hypothetical scenarios with the support of AI. 
 
 
+To facilitate this, we designed a guided interaction to co-create personalized hypothetical scenarios through GPT-4, which involved pre-defined prompting templates and sets of conceptual keywords to construct final scenario generation prompts. We guided our design to address two main objectives.
 
-
-With the purpose of gathering empirical data in a controlled fashion, and orienting the students through the use of GPT-4, we designed a specific guided interaction that consisted of a set of prompting templates and keywords to be used. By doing this, we aimed to restrict our research focus on the students behavior within a limited set of actions. To conceive the design we had two guiding frameworks, Information Foraging and Computational thinking
-
+% Study/design purpose - To examine the behavioral aspects of students-GPT interactions
+Firstly, to accommodate students with diverse levels of experience with GPT. Due to its novelty, we had to guide students without experience in interacting with GPT before. By providing clear guidelines and a set of actions to choose from, outlined by prompt templates, we expected that students lacking prior experience could complete their co-creation task without major technical challenges.
+Secondly, to enable a systematic and reproducible examination of interactions with GPT by establishing a controlled interaction protocol. Not only it standardizes how students interact with GPT but it can be tailored to capture specific elements according to our research interests, particularly the behavioral dimensions of students interaction.
 % Information Foraging
 
+Upon reflecting on the conversational dynamics of ChatGPT in the context of our scenario co-creation task, we opted to guide our prompt design with insights from behavioral models used in Information Foraging Theory. Given that ChatGPT has contextual memory of the conversation, it enables not only to generate scenarios but also to delve deeper by prompting for additional details, thus enriching the scenario with more information. This dynamic closely mirrors two core aspects of Information Foraging Theory: Exploration, where new information landscapes are searched (scenarios), and Exploitation, where agents decide to utilize a landscape to its fullest potential---in this case, further elaborating an interesting scenario.\parencite{todd_foraging_2020,hills_exploration_2015,cohen_should_2007}. Therefore we shape our prompt design around these distinct foraging actions, conceptualizing the interactions as an information foraging task.
+
 % Computational Thinking
+Furthermore, we deemed worthy to focus our analysis in examining the role of Computational Thinking Skills in modulating students interactions with ChatGPT. In a seminal contribution, Wing \parencite*{wing_computational_2006} underscored the importance of Computational Thinking skills, which enables people to solve tasks in a similar way that computer algorithms work and are beneficial across most professional domains. Since then, Computational Thinking Skills have grown into a cornerstone of research in digital education and different researchers argue that they correlate with more confident and efficient use of digital technologies \parencite{cansu_overview_2019,grover_computational_2013, shute_demystifying_2017}.Regarding its influence over Human-AI Interactions, Celik \parencite*{celik_exploring_2023}  explored the determinants of AI literacy, which encompass the knowledge for using, recognizing and evaluating AI-based tools, and reported a significant correlation with Computational Thinking Skills. Building on these contributions, we aim to delve deeper into the practical manifestations of such association and investigate whether the unique nature of LLMs, distinct from other AI systems, might reveal new insights into Computational Thinking Skills within the evolving landscape of education. 
 
-Observing the capabilities mentioned above, we found it intriguing to explore a way that the students could craft their hypothetical scenarios with the use of GPT-4. 
-
-
-
-
-%PX - Our Focus
-
-It also aims to engage educational specialists in speculative reflection about the future of AI in education. Our research not only aims to pave the way for innovative designs that enrich and personalize physical learning experiences using AI tools but also to inspire deeper exploration into the vast potentials of integrating AI in educational settings. 
-
-
-
-
-%Furthermore, debates have arisen regarding the adequacy of our previous approaches to digital technologies in understanding Human-AI interactions, both in general use and in learning environments . One of such approaches centers on the research around \textit{Computational Thinking}. Originally intended to describe specific competencies in programming, its definition has since evolved and sparked debate. While some regard it as a universal skill useful for numerous tasks in our digital society \parencite{wing_computational_2006}, there is ongoing discussion on its definition and measurements \parencite{MorenoLen2018OnCT} . Additionally, the underlying nature of AI has triggered major changes in computation that demands for an updated understanding for the Computational Thinking framework, particularly in the educational landscape due to its current influence in curriculum design\parencite{tedre_ct_2021}. To clarify the debate and deepen our knowledge in digital technologies, new studies should explore the relations between such frameworks and the most recent technological tools within grounded educational interventions. 
-
-
-
-
-%GPT (Generative Pre-Trained) language models are a particular class of AI systems, distinguished by their capability of generating human-like text from a given prompt. They are able to perform a variety of tasks, from translation to text summarization and question answering, often surpassing than human-average performance \parencite{srivastava_beyond_2022}.  As the volume of training data and trained model parameters has increased, their adaptability to tasks beyond their initial training scope has expanded impressively.  GPT-4 has further improved current capabilities in every measured metric so far \parencite{openai2023gpt4}. Current benchmarks, however,  appear to be insufficient in fully measuring it's capabilities. They rely mostly on syntactic accuracy, overlooking the nuanced semantic value of the generated texts \parencite{bubeck_sparks_2023}.  The evolution of GPT, combined with the widespread use of its free chatbot application, ChatGPT, and debate about it's intelligence, or lack of it, has garnered substantial public attention, and the novelty effects on its applications and public reactions can't be underestimated.
-
+%It also aims to engage educational specialists in speculative reflection about the future of AI in education. Our research not only aims to pave the way for innovative designs that enrich and personalize physical learning experiences using AI tools but also to inspire deeper exploration into the vast potentials of integrating AI in educational settings. 
 
 %\subsection{Speculative Methods}\label{Speculative Methods}
 %What it is :Development in social sciences and extension
 %Extension towards digital education research
 %Why for us: Educational specialists views on the future gives insight on the current future-paving processes.
 
-In this study, we explore the gathered behavioral data from the participants' interaction with GPT-4, it's associations with their self-reported Computational Thinking Skills, and their speculations about potential futures in AIEd.
+Therefore, in our study we focused our analysis in exploring the following aspects.
 \begin{enumerate}
-    \item[] \textbf{RQ1.} How does the students' Computational Thinking Skills influence their co-creation behavioral interactions with GPT-4
+    \item[] \textbf{RQ1.} How does the students' Computational Thinking Skills influence their information foraging behavior when co-creating scenarios with GPT-4?
     \begin{enumerate}
         \item[] Alternatives:
         \begin{enumerate}
             \item  Through which behaviors do students showcase their Computational Thinking skills during their engagement with GPT-4?
             \item How are students' Computational Thinking skills reflected in their interactions with GPT-4? 
-            \item In what ways do students demonstrate Computational Thinking skills when engaging with GPT-4 in a structured setting? 
+            \item In what ways do students demonstrate Computational Thinking skills when engaging with GPT-4 in a structured setting?
         \end{enumerate}
     \end{enumerate}
-    \item[] \textbf{RQ2.} What kind of educational research do educational specialists devise for the application of Artificial Intelligence in education?
-    \begin{enumerate}
-        \item[] Alternatives
-        \begin{enumerate}
-            \item What are the predominant themes or focuses in the research envisioned by educational specialists regarding Artificial Intelligence in education? 
-        \end{enumerate}
-    \end{enumerate}
-    \item [] \textbf{RQ3.} What kind of pedagogical value, or lack of it, do educational specialist envision in the development and integration of AI in education?
-    \begin{enumerate}
-        \item [] Alternatives
-        \begin{enumerate}
-            \item To what extent do educational specialists foresee AI influencing pedagogical outcomes in educational contexts?
-            \item What are the anticipated pedagogical benefits and challenges of AI integration as envisioned by educational specialists? 
-        \end{enumerate}
-    \end{enumerate}
-
+    \item  [] %\textbf{RQ2.} I would put my second research question here if i had one
 \end{enumerate}
 \textit{Note, alternatives chosen by a set of alternatives co-created with GPT-4 }
 
 
-
 \section{Methods}\label{Methods}
 
-\subsection{Design}\label{Interaction design}
-\subsubsection{Prompting templates}
-% Templates defined by 2 types of actions and categorization
-\subsubsection{Keywords}
-%Interests assigment should go here
-\subsubsection{Interaction}
+\subsection*{Guided interaction Design}\label{Interaction design}
+
+As mentioned above,  our design purpose consists of orienting the students in their interaction and enabling a methodical analysis of the process. It consists of a prompting template, comprising six modifiable prompts, a set of keyword cards, and an interaction protocol. With them, students crafted a diversity of prompts tailored to their interests. Subsequently, we used these crafted prompts with ChatGPT to create and elaborate their hypothetical scenarios. 
+
+\subsubsection*{Prompting templates and Set of Keywords}
+
+The prompting templates were divided into two main categories, according to the information foraging theoretical approach described above. Firstly, we created three different Exploration prompts aimed at creating unique scenarios. Secondly, we created three Exploitation prompts to further elaborate already generated scenarios. They consisted in a fixed text written in black representing unchangeable elements, along with variable spaces written in colored texts. These colored spaces corresponded to different categories where students could select and combine various keywords, or concepts. These were selected from a constructed set of keywords described below. This distinction between the two types of prompting templates facilitates our analysis by enabling us to clearly describe their use as either exploration or exploitation actions.
+
+To construct the set of keywords, we envisioned six categories that generally described AI-influenced educational scenarios. These categories were: Actors, AI Tools, Educational Process, Environment, Subject, and Activity. Additionally, we created an "Effects" category to elicit both positive and negative scenarios. Afterwards, aiming of examining the students' personal interests in driving the interaction, these categories were populated based on an initial course assignment, in which students were asked to outline their interests in relation to the aforementioned categories. The final result was a diverse set of keywords, reflecting the varying perspectives and interests that students brought to the course.
+
+Both the prompting template and the keywords were later printed and laminated\textbf{.} The keywords were represented as a series of color-coded cards, each card corresponding to an individual keyword and colored by category. The color-coding matched the ones used in the prompting template, to enable a more intuitive understanding of the allowed combinations.
+
+\subsubsection*{Interaction Protocol}
+
+The interactions were realized individually with each student. The main author acted as intermediary between the students and ChatGPT, guiding them over the co-creation process according to the following interaction protocol:
+    \begin{itemize}
+
+        \item  Prompting templates were displayed in a table, all of the options visible for them. The keywords cards were facing down, distributed almost equally in 5 rows and divided by category.
+        \item I reiterated the aim of the task---creating an interesting scenario for their assignments---and introduced the purpose of the prompting templates and the set of keywords. Additionally, I provided an example of a generation prompt that included example keywords.
+        \item If the aim and rules were clear, students proceeded to uncover the first row of cards and started crafting a prompt by selecting one template and keywords of interest. When completed, I prompted ChatGPT and displayed the generated text. After students finalized reading, I reminded them their different choices, either generate other scenarios (explore), further elaborate the generated scenario, or end the task by choosing the scenario in front of them.
+        \item When the participant found that any scenario was interesting enough for them to choose it and end the task, the full transcript of the conversation for the selected scenario was provided to them.
+    \end{itemize}
+
+
+
 
 \subsection{Quantitative analysis - Network Analysis}\label{Quantitative Analysis}
 
