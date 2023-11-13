@@ -180,14 +180,14 @@ We designed the course assignments to explore hypothetical scenarios about AI im
 Complementing the course contents with a practical experience, we guided the students to interactively generate their hypothetical scenarios with the support of AI. 
 
 
-To facilitate this, we designed a guided interaction to co-create personalized hypothetical scenarios through GPT-4, which involved pre-defined prompting templates and sets of conceptual keywords to construct final scenario generation prompts. We guided our design to address two main objectives.
+To facilitate this, we designed a guided interaction to co-create personalized hypothetical scenarios through GPT-4, which involved pre-defined \textit{prompt templates} and a \textit{set of keywords} to construct scenario generation prompts. We guided our design to address two main objectives.
 
 % Study/design purpose - To examine the behavioral aspects of students-GPT interactions
-Firstly, to accommodate students with diverse levels of experience with GPT. Due to its novelty, we had to guide students without experience in interacting with GPT before. By providing clear guidelines and a set of actions to choose from, outlined by prompt templates, we expected that students lacking prior experience could complete their co-creation task without major technical challenges.
-Secondly, to enable a systematic and reproducible examination of interactions with GPT by establishing a controlled interaction protocol. Not only it standardizes how students interact with GPT but it can be tailored to capture specific elements according to our research interests, particularly the behavioral dimensions of students interaction.
+Firstly, to accommodate students with diverse levels of experience with ChatGPT. Due to its novelty, we had to guide students without experience in interacting with ChatGPT before. By providing clear guidelines and a set of actions to choose from, outlined by prompt templates, we expected that students lacking prior experience could complete their co-creation task without major technical challenges.
+Secondly, to enable a systematic and reproducible examination of interactions with ChatGPT by establishing a controlled interaction protocol. Not only it standardizes how students interact with ChatGPT but it can be tailored to capture specific elements according to our research interests, particularly the behavioral dimensions of students interaction.
 % Information Foraging
 
-Upon reflecting on the conversational dynamics of ChatGPT in the context of our scenario co-creation task, we opted to guide our prompt design with insights from behavioral models used in Information Foraging Theory. Given that ChatGPT has contextual memory of the conversation, it enables not only to generate scenarios but also to delve deeper by prompting for additional details, thus enriching the scenario with more information. This dynamic closely mirrors two core aspects of Information Foraging Theory: Exploration, where new information landscapes are searched (scenarios), and Exploitation, where agents decide to utilize a landscape to its fullest potential---in this case, further elaborating an interesting scenario.\parencite{todd_foraging_2020,hills_exploration_2015,cohen_should_2007}. Therefore we shape our prompt design around these distinct foraging actions, conceptualizing the interactions as an information foraging task.
+Upon reflecting on the conversational dynamics of ChatGPT in the context of our scenario co-creation task, we opted to guide our prompt design with insights from behavioral models used in Information Foraging Theory. Given that ChatGPT has contextual memory of the conversation, it enables not only to generate scenarios but also to delve deeper by prompting for additional details, thus enriching the scenario with more information. This dynamic closely mirrors two core aspects of Information Foraging Theory: \textit{Exploration}, where new information landscapes are searched (scenarios), and \textit{Exploitation}, where agents decide to utilize a landscape to its fullest potential---in this case, further elaborating an interesting scenario.\parencite{todd_foraging_2020,hills_exploration_2015,cohen_should_2007}. Therefore we shape our prompt design around these distinct foraging actions, conceptualizing the interactions as an information foraging task.
 
 % Computational Thinking
 Furthermore, we deemed worthy to focus our analysis in examining the role of Computational Thinking Skills in modulating students interactions with ChatGPT. In a seminal contribution, Wing \parencite*{wing_computational_2006} underscored the importance of Computational Thinking skills, which enables people to solve tasks in a similar way that computer algorithms work and are beneficial across most professional domains. Since then, Computational Thinking Skills have grown into a cornerstone of research in digital education and different researchers argue that they correlate with more confident and efficient use of digital technologies \parencite{cansu_overview_2019,grover_computational_2013, shute_demystifying_2017}.Regarding its influence over Human-AI Interactions, Celik \parencite*{celik_exploring_2023}  explored the determinants of AI literacy, which encompass the knowledge for using, recognizing and evaluating AI-based tools, and reported a significant correlation with Computational Thinking Skills. Building on these contributions, we aim to delve deeper into the practical manifestations of such association and investigate whether the unique nature of LLMs, distinct from other AI systems, might reveal new insights into Computational Thinking Skills within the evolving landscape of education. 
@@ -217,35 +217,68 @@ Therefore, in our study we focused our analysis in exploring the following aspec
 
 \section{Methods}\label{Methods}
 
-\subsection*{Guided interaction Design}\label{Interaction design}
 
-As mentioned above,  our design purpose consists of orienting the students in their interaction and enabling a methodical analysis of the process. It consists of a prompting template, comprising six modifiable prompts, a set of keyword cards, and an interaction protocol. With them, students crafted a diversity of prompts tailored to their interests. Subsequently, we used these crafted prompts with ChatGPT to create and elaborate their hypothetical scenarios. 
+\subsection*{Guided Interaction Design}\label{Interaction design}
 
-\subsubsection*{Prompting templates and Set of Keywords}
+As mentioned above, our design aims to orient the participants in their interaction and enable a methodical analysis of the process. It consists of six modifiable \textit{prompt templates}, divided in two types; a set of \textit{keyword cards}, individual cards with relevant concepts; and an \textit{interaction protocol}, outlining each interaction process. With them, participants crafted a diversity of prompts tailored to their interests, which we used to create and elaborate their hypothetical scenarios in ChatGPT. 
 
-The prompting templates were divided into two main categories, according to the information foraging theoretical approach described above. Firstly, we created three different Exploration prompts aimed at creating unique scenarios. Secondly, we created three Exploitation prompts to further elaborate already generated scenarios. They consisted in a fixed text written in black representing unchangeable elements, along with variable spaces written in colored texts. These colored spaces corresponded to different categories where students could select and combine various keywords, or concepts. These were selected from a constructed set of keywords described below. This distinction between the two types of prompting templates facilitates our analysis by enabling us to clearly describe their use as either exploration or exploitation actions.
+\subsubsection*{Prompting Templates and Set of Keywords}
 
-To construct the set of keywords, we envisioned six categories that generally described AI-influenced educational scenarios. These categories were: Actors, AI Tools, Educational Process, Environment, Subject, and Activity. Additionally, we created an "Effects" category to elicit both positive and negative scenarios. Afterwards, aiming of examining the students' personal interests in driving the interaction, these categories were populated based on an initial course assignment, in which students were asked to outline their interests in relation to the aforementioned categories. The final result was a diverse set of keywords, reflecting the varying perspectives and interests that students brought to the course.
+We created the prompt templates by distinguishing two main categories, following the information foraging theoretical approach described above. 
 
-Both the prompting template and the keywords were later printed and laminated\textbf{.} The keywords were represented as a series of color-coded cards, each card corresponding to an individual keyword and colored by category. The color-coding matched the ones used in the prompting template, to enable a more intuitive understanding of the allowed combinations.
+Firstly, we created three different \textit{Exploration prompts} aimed at creating unique scenarios. Their nature was defined by their start ("Describe to me a scenario..." and "Predict a future scenario...") and they allowed for the combination of a maximum of 6 keywords, which granted sufficient conceptual context for our co-creation aims. They provided the starting point to create and explore different scenarios and informational landscapes.
+
+Secondly, we created three \textit{Exploitation prompts} to further elaborate already generated scenarios. They prompted for more information about the specified scenario, focusing in one, or two, keywords of interest. Therefore, they enabled the exploitation of an interesting scenario for more information.
+
+This distinction between the two types of \textit{prompt templates} facilitates our analysis by enabling us to clearly categorize their use within the interaction as either \textit{exploration} or \textit{exploitation} actions.
+
+To construct the \textit{set of keywords}, we envisioned seven categories that generally described AI-influenced educational scenarios. These categories were: Effects, Actors, AI Tools, Educational Process, Environment, Subject, and Activity. Afterwards, aiming of examining the participants' personal interests in driving the interaction, these categories were populated based on an initial course assignment, in which participants were asked to outline their interests in relation to the aforementioned categories. Additionally, by taking into account the role of their reported interests, this fostered a student-driven approach that might enhance the relevance and engagement of the participants within the task. As a result, we created a set of 86 keywords distributed unevenly in the different categories. They provided the conceptual context of every generated scenario, according to the participants' choices and combinations of them.
+
+Furthermore, we allowed the participants to use keywords provided by ChatGPT. After observing the nature of its answers to our prompts, where ChatGPT generally offered bullet points to describe the main aspects of the generated scenario, we found interesting to allow the use of its points headers as keywords. These \textit{GPT-sourced keywords} enabled more flexibility and precision, particularly if participants were prone to exploit an interesting scenario based on its specific conceptual information, which would not be necessarily present in the \textit{keywords set}. This added another interesting layer of theoretical depth, as we could observe how the \textit{Exploration} and \textit{Exploitation} of information intertwined with both human-generated concepts and AI-generated concepts.
+
+Both the \textit{prompt templates} and the \textit{keywords} were later printed and laminated. The \textit{prompt templates} consisted of a fixed text written in black representing unchangeable elements, along with variable spaces written in colored texts. These colored spaces corresponded to the different categories where participants could select and combine various concepts given by the \textit{set of keywords.} The keywords were represented as a series of color-coded cards, each card corresponding to an individual keyword and colored by category. The color-coding matched the ones used for the \textit{prompt templates}, to enable a more intuitive understanding of the allowed combinations.
+
+To facilitate the interaction process, we designed an \textit{interaction protocol} to guide the use of the \textit{prompt templates} with the \textit{set of keywords}. This protocol guided the process, standardized my role as a researcher, and constrained my influence over the participants' decision-making process. This approach ensured sufficient space for participants' agency in driving the interaction, while maintaining a helpful guidance throughout the interaction.
 
 \subsubsection*{Interaction Protocol}
 
-The interactions were realized individually with each student. The main author acted as intermediary between the students and ChatGPT, guiding them over the co-creation process according to the following interaction protocol:
+The interactions were realized individually with each participants. The main author acted as intermediary between the participants and ChatGPT, guiding them over the co-creation process according to the following interaction protocol:
     \begin{itemize}
 
         \item  Prompting templates were displayed in a table, all of the options visible for them. The keywords cards were facing down, distributed almost equally in 5 rows and divided by category.
-        \item I reiterated the aim of the task---creating an interesting scenario for their assignments---and introduced the purpose of the prompting templates and the set of keywords. Additionally, I provided an example of a generation prompt that included example keywords.
-        \item If the aim and rules were clear, students proceeded to uncover the first row of cards and started crafting a prompt by selecting one template and keywords of interest. When completed, I prompted ChatGPT and displayed the generated text. After students finalized reading, I reminded them their different choices, either generate other scenarios (explore), further elaborate the generated scenario, or end the task by choosing the scenario in front of them.
-        \item When the participant found that any scenario was interesting enough for them to choose it and end the task, the full transcript of the conversation for the selected scenario was provided to them.
+        \item I reiterated the aim of the task---creating an interesting scenario for their assignments---and introduced the purpose of the prompting templates and the set of keywords. Additionally, I provided an example of a generation prompt that included example keywords. I reminded their uses constantly during the interaction to ensure they could effectively engage with the task.
+        \item When the aim and rules were clear, participants proceeded to uncover the first row of cards and started crafting a prompt by selecting one template and keywords of interest. When completed, I prompted ChatGPT and displayed the generated text. After participants finalized reading, I reminded them their different choices, either generate (\textit{explore}) other scenarios, further elaborate (\textit{exploit}) the generated scenario, or end the task by choosing the scenario in front of them. I also pointed out the possibility of using GPT-sourced keywords to explore or exploit scenarios, similar to the physical cards.
+        \item When the participant found that a scenario was interesting enough for them to choose it and end the task, the full transcript of the conversation for the selected scenario was provided to them. After the scenario was provided, the participants continued to work into their assignments, focused in their chosen scenarios.
     \end{itemize}
 
 
+\subsubsection*{Computational Thinking Scale}
+
+Following our purpose of examining the role of Computational Thinking within our interaction process, and following Celik \parencite*{celik_exploring_2023} previous study on AI literacy, we decided to use the same data collection instrument, the Computational Thinking Scale (CTS) survey.
+
+Developed by Korkmaz et al. \parencite*{korkmaz_validity_2017-1}, it is a self-report scale based on the framework by CSTA \& ISTE \parencite*{csta_iste_operational_2015}, and the Computational Thinking Leadership Toolkit ISTE \parencite*{iste_computational_2011}. They define computational thinking as the result of 5 intertwined skills, Creativity, Algorithmic Thinking, Cooperativity, Critical Thinking, and Problem Solving. Consequently, the scale consists of 29 items divided in the corresponding 5 sub-factors. Based on a five-point Likert-ype rating structure, with higher scores indicating greater development of computational thinking skills. 
+
+Additionally, considering that the scale was developed in computer sciences learning environments we adapted three items, aiming for more contextual clarity in grammar and semantics. We adapted mathematically specific terms to be more generally understood. We deemed this adaptations suitable for our distinct educational environment.
 
 
-\subsection{Quantitative analysis - Network Analysis}\label{Quantitative Analysis}
+\subsection{Data Collection}
 
-\subsection{Qualitative analysis- Content Analysis}\label{Qualitative Analysis}
+The interaction and survey data was collected from ten participants who enrolled into "Basics on AI in Education" doctoral course at the University of Helsinki. Eight of them were doctoral students and two master students, all of them involved in educational research. A majority of them were Finnish, but the course activities were done in English as the course is part of the international doctoral programme. Their previous experiences with ChatGPT, or AI, differed. While most had extensive experience and were constantly using ChatGPT in their workflow, others had not interacted with ChatGPT before the course.
+
+
+
+\subsection{Data Analysis}
+
+Frequency based coding in Atlas.ti. 
+
+Descriptive analysis realized for interesting patterns noticed while overviewing the data
+
+Network analysis to find significant associations between variables.
+
+
+
+
+% \subsection{Qualitative analysis- Content Analysis}\label{Qualitative Analysis}
 
 
 
