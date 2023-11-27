@@ -43,6 +43,7 @@
 %%<additional latex packages if required can be included here>
 
 \usepackage{graphicx}%
+\graphicspath{ {./Figures/} }
 \usepackage{multirow}%
 \usepackage{amsmath,amssymb,amsfonts}%
 \usepackage{amsthm}%
@@ -173,7 +174,7 @@ We focused our study on exploring the interaction between students and GPT-4 for
 %This study focuses on exploring the interaction between students and LLMs, in this case GPT-4, for the co-creation of personalized case scenarios in a Higher Education course with the aim to analyze it from an Information foraging approach and also seeing how Computational Thinking Skills may modulate this behavior
 
 % The context higher education course regarding AI in education
-The study was conducted in an on-campus doctoral course titled “Basics of AI in education”, aimed at exploring historical and contemporary AIEd developments. We covered an overview of the historical technical evolution of AIEd systems, examination of current popular systems, like performance predictors, AI-tutors and LLMs, a review of the intersection between AI and cognitive sciences, as well as a discussion of emerging ethical concerns and regulatory developments. 
+The study was conducted in an on-campus doctoral course titled “Basics of AI in education”, aimed at exploring historical and contemporary AIEd developments. It covered an overview of the historical technical evolution of AIEd systems, examination of current popular systems, like performance predictors, AI-tutors and LLMs, a review of the intersection between AI and cognitive sciences, as well as a discussion of emerging ethical concerns and regulatory developments. 
 
 % Purpose of the course - Speculative assigments - flexible topics
 We designed the course assignments to explore hypothetical scenarios about AI implementations in education. For this purpose the students were asked to individually design a study, and write a reflective essay about a specific chosen scenario. Consequently, the course topics were broad and suggestive, not focused on any pre-defined scenario, giving the students freedom to choose a scenario of their own interest. 
@@ -187,10 +188,12 @@ Firstly, to accommodate students with diverse levels of experience with ChatGPT.
 Secondly, to enable a systematic and reproducible examination of interactions with ChatGPT by establishing a controlled interaction protocol. Not only it standardizes how students interact with ChatGPT but it can be tailored to capture specific elements according to our research interests, particularly the behavioral dimensions of students interaction.
 % Information Foraging
 
-Upon reflecting on the conversational dynamics of ChatGPT in the context of our scenario co-creation task, we opted to guide our prompt design with insights from behavioral models used in Information Foraging Theory. Given that ChatGPT has contextual memory of the conversation, it enables not only to generate scenarios but also to delve deeper by prompting for additional details, thus enriching the scenario with more information. This dynamic closely mirrors two core aspects of Information Foraging Theory: \textit{Exploration}, where new information landscapes are searched (scenarios), and \textit{Exploitation}, where agents decide to utilize a landscape to its fullest potential---in this case, further elaborating an interesting scenario.\parencite{todd_foraging_2020,hills_exploration_2015,cohen_should_2007}. Therefore we shape our prompt design around these distinct foraging actions, conceptualizing the interactions as an information foraging task.
+Upon reflecting on the conversational dynamics of ChatGPT in the context of our scenario co-creation task, we opted to guide our prompt design with insights from behavioral models used in Information Foraging Theory. Given that ChatGPT has contextual memory of the conversation, it enables not only to generate scenarios but also to delve deeper by prompting for additional details, thus enriching the scenario with more information. This dynamic closely mirrors two core aspects of Information Foraging Theory: \textit{Exploration}, where new information landscapes are searched (scenarios), and \textit{Exploitation}, where agents decide to utilize a landscape to its fullest potential---in this case, further elaborating an interesting scenario.\parencite{todd_foraging_2020,hills_exploration_2015,cohen_should_2007}. Therefore we shape our prompt design around these distinct foraging actions, conceptualizing the interactions as a a decision-making process within an information foraging task.  % Should I add here smt like " Note that, contrary to prompt engineering studies, we are designing our prompt focusing in examining human behavior, instead of the LLM performance."
 
 % Computational Thinking
-Furthermore, we deemed worthy to focus our analysis in examining the role of Computational Thinking Skills in modulating students interactions with ChatGPT. In a seminal contribution, Wing \parencite*{wing_computational_2006} underscored the importance of Computational Thinking skills, which enables people to solve tasks in a similar way that computer algorithms work and are beneficial across most professional domains. Since then, Computational Thinking Skills have grown into a cornerstone of research in digital education and different researchers argue that they correlate with more confident and efficient use of digital technologies \parencite{cansu_overview_2019,grover_computational_2013, shute_demystifying_2017}.Regarding its influence over Human-AI Interactions, Celik \parencite*{celik_exploring_2023}  explored the determinants of AI literacy, which encompass the knowledge for using, recognizing and evaluating AI-based tools, and reported a significant correlation with Computational Thinking Skills. Building on these contributions, we aim to delve deeper into the practical manifestations of such association and investigate whether the unique nature of LLMs, distinct from other AI systems, might reveal new insights into Computational Thinking Skills within the evolving landscape of education. 
+Furthermore, we deemed worthy to focus our analysis in examining the role of Computational Thinking Skills in modulating students interactions with ChatGPT. In a seminal contribution, Wing \parencite*{wing_computational_2006} underscored the importance of Computational Thinking skills, which enables people to solve tasks in a similar way that computer algorithms work and are beneficial across most professional domains. Since then, Computational Thinking Skills have grown into a cornerstone of research in digital education and different researchers argue that they correlate with more confident and efficient use of digital technologies \parencite{cansu_overview_2019,grover_computational_2013, shute_demystifying_2017}.Regarding the influence of Computational Thinking over Human-AI Interactions, Celik \parencite*{celik_exploring_2023} explored the determinants of AI literacy, which encompass the knowledge for using, recognizing and evaluating AI-based tools, and reported a significant correlation with Computational Thinking Skills. 
+
+Building on these contributions, we aim to delve deeper into the practical manifestations of such association and investigate whether the unique nature of LLMs, distinct from other AI systems, might reveal new insights into Computational Thinking Skills within the evolving landscape of education. 
 
 %It also aims to engage educational specialists in speculative reflection about the future of AI in education. Our research not only aims to pave the way for innovative designs that enrich and personalize physical learning experiences using AI tools but also to inspire deeper exploration into the vast potentials of integrating AI in educational settings. 
 
@@ -201,30 +204,48 @@ Furthermore, we deemed worthy to focus our analysis in examining the role of Com
 
 Therefore, in our study we focused our analysis in exploring the following aspects.
 \begin{enumerate}
-    \item[] \textbf{RQ1.} How does the students' Computational Thinking Skills influence their information foraging behavior when co-creating scenarios with GPT-4?
-    \begin{enumerate}
-        \item[] Alternatives:
+    \item[] \textbf{RQ1.} What are the characteristics of students'-AI behavior within a guided interaction with ChatGPT-4 in terms of Exploration-Exploitation decisions?
+    \item []
+    \item  [] \textbf{RQ2.} How do the students' Computational Thinking Skills influence their information foraging behavior when co-creating scenarios with ChatGPT-4?
+              \begin{enumerate}
+              \item[] Alternatives:
         \begin{enumerate}
             \item  Through which behaviors do students showcase their Computational Thinking skills during their engagement with GPT-4?
             \item How are students' Computational Thinking skills reflected in their interactions with GPT-4? 
             \item In what ways do students demonstrate Computational Thinking skills when engaging with GPT-4 in a structured setting?
-        \end{enumerate}
+
     \end{enumerate}
-    \item  [] %\textbf{RQ2.} I would put my second research question here if i had one
+ \end{enumerate}
+ 
 \end{enumerate}
+
 \textit{Note, alternatives chosen by a set of alternatives co-created with GPT-4 }
 
 
 \section{Methods}\label{Methods}
 
+This section describes our participants, the interaction design, and the conducted Computational Thinking Scale. The study was carried out in accordance to the code of ethics of blablabla. Informed consent was obtained from all participants.
+
+\subsection*{Participants}
+
+We conducted this study within an international doctoral course called "Basics on Artificial Intelligence in Educational Sciences" at the University of Helsinki. Initially, 16 students registered to the course, but only 12 completed it. We invited these students to join the study and 10 agreed to participate. At the first class, we presented the main author to the students and the purpose of studying the development of the course; however, they were naive to the study's specific aims.
+
+Participants ranged in age from 30 to 40 (mean = 32.8), with near equal gender distribution (5 females). Six of them were Finnish and the rest a combination of Chinese and Koreans, they all had fluent English skills. They specialized in different educational fields of research, such as Early Childhood Education, Educational Psychology, Science Education, and Higher Education. As an optional course, we assume that all participants had previous interests towards AI applications in education, either for personal or research motivations. Five of them reported previous experiences in using ChatGPT for work, research or personal experiments. The other four reported no previous experience with ChatGPT, or similar applications. 
+
+Considering the small and non-representative nature of our sample, we focus our study on describing our localized experience and generating hypothesis rather than generalizing findings for broader populations.  
+
+
+%The interaction and survey data was collected from ten participants who enrolled into "Basics on AI in Education" doctoral course at the University of Helsinki. Eight of them were doctoral students and two master students, all of them involved in educational research. A majority of them were Finnish, but the course activities were done in English as the course is part of the international doctoral programme. Their previous experiences with ChatGPT, or AI, differed. While most had extensive experience and were constantly using ChatGPT in their workflow, others had not interacted with ChatGPT before the course.
+
+
 
 \subsection*{Guided Interaction Design}\label{Interaction design}
 
-As mentioned above, our design aims to orient the participants in their interaction and enable a methodical analysis of the process. It consists of six modifiable \textit{prompt templates}, divided in two types; a set of \textit{keyword cards}, individual cards with relevant concepts; and an \textit{interaction protocol}, outlining each interaction process. With them, participants crafted a diversity of prompts tailored to their interests, which we used to create and elaborate their hypothetical scenarios in ChatGPT. 
+As mentioned before, our design aims to orient the participants during the task and enable a methodical analysis of the interaction. It consists of six modifiable \textit{prompt templates}, divided in two types; a set of \textit{keyword cards}, individual cards with relevant concepts; and an \textit{interaction protocol}, outlining each interaction process. With them, participants crafted a diversity of prompts tailored to their interests, which were used to create and elaborate their hypothetical scenarios in ChatGPT. 
 
-\subsubsection*{Prompting Templates and Set of Keywords}
+\subsubsection*{\textit{Prompt Templates and Set of Keywords}}
 
-We created the prompt templates by distinguishing two main categories, following the information foraging theoretical approach described above. 
+We created the\textit{ prompt templates} by distinguishing two main categories, following the information foraging theoretical approach described above. 
 
 Firstly, we created three different \textit{Exploration prompts} aimed at creating unique scenarios. Their nature was defined by their start ("Describe to me a scenario..." and "Predict a future scenario...") and they allowed for the combination of a maximum of 6 keywords, which granted sufficient conceptual context for our co-creation aims. They provided the starting point to create and explore different scenarios and informational landscapes.
 
@@ -232,7 +253,7 @@ Secondly, we created three \textit{Exploitation prompts} to further elaborate al
 
 This distinction between the two types of \textit{prompt templates} facilitates our analysis by enabling us to clearly categorize their use within the interaction as either \textit{exploration} or \textit{exploitation} actions.
 
-To construct the \textit{set of keywords}, we envisioned seven categories that generally described AI-influenced educational scenarios. These categories were: Effects, Actors, AI Tools, Educational Process, Environment, Subject, and Activity. Afterwards, aiming of examining the participants' personal interests in driving the interaction, these categories were populated based on an initial course assignment, in which participants were asked to outline their interests in relation to the aforementioned categories. Additionally, by taking into account the role of their reported interests, this fostered a student-driven approach that might enhance the relevance and engagement of the participants within the task. As a result, we created a set of 86 keywords distributed unevenly in the different categories. They provided the conceptual context of every generated scenario, according to the participants' choices and combinations of them.
+To construct the \textit{set of keywords}, we envisioned seven categories that generally described AI-influenced educational scenarios. These categories were: Effects, Actors, AI Tools, Educational Process, Environment, Subject, and Activity. Afterwards, aiming of examining the participants' personal interests in driving the interaction, these categories were populated based on an initial course assignment, in which participants were asked to introduce themselves and their interests in relation to the aforementioned categories. Additionally, by taking into account the role of their reported interests, this fostered a student-driven approach that might enhance the relevance and engagement of the participants within the task. As a result, we created a set of 86 keywords distributed unevenly in the different categories. They provided the conceptual context of every generated scenario, according to the participants' choices and combinations of them.
 
 Furthermore, we allowed the participants to use keywords provided by ChatGPT. After observing the nature of its answers to our prompts, where ChatGPT generally offered bullet points to describe the main aspects of the generated scenario, we found interesting to allow the use of its points headers as keywords. These \textit{GPT-sourced keywords} enabled more flexibility and precision, particularly if participants were prone to exploit an interesting scenario based on its specific conceptual information, which would not be necessarily present in the \textit{keywords set}. This added another interesting layer of theoretical depth, as we could observe how the \textit{Exploration} and \textit{Exploitation} of information intertwined with both human-generated concepts and AI-generated concepts.
 
@@ -240,49 +261,125 @@ Both the \textit{prompt templates} and the \textit{keywords} were later printed 
 
 To facilitate the interaction process, we designed an \textit{interaction protocol} to guide the use of the \textit{prompt templates} with the \textit{set of keywords}. This protocol guided the process, standardized my role as a researcher, and constrained my influence over the participants' decision-making process. This approach ensured sufficient space for participants' agency in driving the interaction, while maintaining a helpful guidance throughout the interaction.
 
-\subsubsection*{Interaction Protocol}
+\subsubsection*{\textit{Interaction Protocol}}
 
-The interactions were realized individually with each participants. The main author acted as intermediary between the participants and ChatGPT, guiding them over the co-creation process according to the following interaction protocol:
+We scheduled individual sessions with each student for the task. At the time, access to ChatGPT-4 required premium subscription. Consequently, students conducted their task through the author's computer. The data from these interactions was initially stored in author's ChatGPT account. After participants signed the consents, we extracted the data for analysis and deleted any data regarding non-participants.
+
+As the main author, I facilitated the sessions, guiding the participants over the co-creation process according to the following interaction protocol:
     \begin{itemize}
 
-        \item  Prompting templates were displayed in a table, all of the options visible for them. The keywords cards were facing down, distributed almost equally in 5 rows and divided by category.
-        \item I reiterated the aim of the task---creating an interesting scenario for their assignments---and introduced the purpose of the prompting templates and the set of keywords. Additionally, I provided an example of a generation prompt that included example keywords. I reminded their uses constantly during the interaction to ensure they could effectively engage with the task.
-        \item When the aim and rules were clear, participants proceeded to uncover the first row of cards and started crafting a prompt by selecting one template and keywords of interest. When completed, I prompted ChatGPT and displayed the generated text. After participants finalized reading, I reminded them their different choices, either generate (\textit{explore}) other scenarios, further elaborate (\textit{exploit}) the generated scenario, or end the task by choosing the scenario in front of them. I also pointed out the possibility of using GPT-sourced keywords to explore or exploit scenarios, similar to the physical cards.
-        \item When the participant found that a scenario was interesting enough for them to choose it and end the task, the full transcript of the conversation for the selected scenario was provided to them. After the scenario was provided, the participants continued to work into their assignments, focused in their chosen scenarios.
+        \item  Displaying the Prompt templates on a table and distributing the keywords cards, face down, almost equally in 5 rows, divided by the coloured categories.
+        \item I reiterated the aim of the task---creating an interesting scenario for their assignments---and introduced the use of prompt templates and the keywords, including an example to illustrate their application. I continuously reminded their uses during the interaction to ensure they could effectively engage with the task.
+        \item When the aim and rules were clear, participants began by uncovering the first row of cards, selecting a template and keywords of interest to craft a prompt. I then inputted the prompt into ChatGPT and displayed the generated text. Participants were then reminded of their different options: to generate (\textit{explore}) new scenarios, further elaborate (\textit{exploit}) the current one, or concluding the task by choosing the scenario. I also highlighted the option of using GPT-sourced keywords to explore or exploit scenarios.
+        \item Once the participant decided that a scenario was interesting enough for them to end the task, I provided them with the full transcript of the conversation for the selected scenario. They then proceeded to work on their assignments, focusing on the chosen scenario.
     \end{itemize}
 
 
-\subsubsection*{Computational Thinking Scale}
+\subsection*{Computational Thinking Scale}
 
-Following our purpose of examining the role of Computational Thinking within our interaction process, and following Celik \parencite*{celik_exploring_2023} previous study on AI literacy, we decided to use the same data collection instrument, the Computational Thinking Scale (CTS) survey.
+Following our purpose of examining the role of Computational Thinking within our interaction process, and following Celik's previous study on AI literacy \parencite*{celik_exploring_2023}, we chose to employ the same instrument, the Computational Thinking Scale (CTS) survey.
 
-Developed by Korkmaz et al. \parencite*{korkmaz_validity_2017-1}, it is a self-report scale based on the framework by CSTA \& ISTE \parencite*{csta_iste_operational_2015}, and the Computational Thinking Leadership Toolkit ISTE \parencite*{iste_computational_2011}. They define computational thinking as the result of 5 intertwined skills, Creativity, Algorithmic Thinking, Cooperativity, Critical Thinking, and Problem Solving. Consequently, the scale consists of 29 items divided in the corresponding 5 sub-factors. Based on a five-point Likert-ype rating structure, with higher scores indicating greater development of computational thinking skills. 
+Developed by Korkmaz et al. \parencite*{korkmaz_validity_2017-1}, it is a self-report scale based on the framework by CSTA \& ISTE \parencite*{csta_iste_operational_2015}, and the Computational Thinking Leadership Toolkit ISTE \parencite*{iste_computational_2011}. They define computational thinking as the result of 5 intertwined skills, Creativity, Algorithmic Thinking, Cooperativity, Critical Thinking, and Problem Solving. Consequently, the scale consists of 29 items divided in the corresponding 5 sub-factors. Based on a five-point Likert-type rating structure, with higher scores indicating greater development of computational thinking skills. 
 
 Additionally, considering that the scale was developed in computer sciences learning environments we adapted three items, aiming for more contextual clarity in grammar and semantics. We adapted mathematically specific terms to be more generally understood. We deemed this adaptations suitable for our distinct educational environment.
 
+%Add CTS reliability calculat
 
-\subsection{Data Collection}
+\subsection*{Data Analysis}
 
-The interaction and survey data was collected from ten participants who enrolled into "Basics on AI in Education" doctoral course at the University of Helsinki. Eight of them were doctoral students and two master students, all of them involved in educational research. A majority of them were Finnish, but the course activities were done in English as the course is part of the international doctoral programme. Their previous experiences with ChatGPT, or AI, differed. While most had extensive experience and were constantly using ChatGPT in their workflow, others had not interacted with ChatGPT before the course.
+Initially, we processed the behavioral data from interactions using the ATLAS.ti qualitative analysis software tool. A frequency-based data set was constructed based on the interactions' logs provided by ChatGPT. By crossing the logs with the prompt templates, set of keywords, and students' initial interests (reported during first assignment), we defined 8 variables describing the interaction. Both the Computational Thinking Scale and the interaction data were then analyzed within R statistical computing environment.
 
-% Should I mention data protection and ethical regulations here?
+First, for RQ1 (regarding the interaction characterization) we used descriptive analysis to examine participants' behavioral data. Following the available choices provided by the interaction design, we gathered 5 distinct discrete variables describing: Information foraging actions (Exploration and Exploitation); Total flipped keywords cards; and the source of the used cards (either provided by the guide set of keywords cards, or by the GPT-generated scenarios). Additionally, we classified the used keywords according to the first introductory course assignment, where students provided their initial interests to construct the set of keywords. As such, we distinguished between used of keywords matching their initially reported interests or not. Looking to surface meaningful associations. To surface meaningful associations and mitigate the risk of false negatives, we adopted a grammatically and semantically flexible classification approach. This was essential because some keywords, such as 'Higher-Education' and 'University,' represented closely related interests. 
 
-\subsection{Data Analysis}
-
-Frequency based coding in Atlas.ti. 
-
-Descriptive analysis realized for interesting patterns noticed while overviewing the data
-
-Network analysis to find significant associations between variables.
+Lastly, we extracted the conversation time length from the conversation logs. This measured the time between the first and the last prompt, not accounting for the task introduction and first prompt construction time. 
 
 
 
+To investigate RQ2, regarding the potential associations between participants' interactions and their Computational Thinking skills, we employed network analysis methods.
 
-% \subsection{Qualitative analysis- Content Analysis}\label{Qualitative Analysis}
+We estimated the network structure by first calculating a statistical model from the data and then analyzing the weighted network measures, estimating their stability with bootstrapping methods \parencite{kotz_bootstrap_1992, hevey_network_2018}. These procedures were conducted using the \textit{bootnet} package \parencite{epskamp_estimating_2018}
+
+Accounting for the non-normal distribution, low sample size, and the mix of ordinal and continuous variables in our data, we estimated a correlation network using Kendall's correlation matrix \parencite*{kendall_rank_1949}.  To minimize spurious edges, we set a standard statistical significance threshold of $p < 0.05$ and adjusted the correlation strength with a lower threshold of $\tau > 0.4$, based on Dancey \& Reidy's \parencite*{dancey_statistics_2007} correlations' strength interpretation in psychological studies.
+This approach enabled us to produce a denser network (with more edges), which is more suitable for initial data exploration and hypothesis generation in our study context.
+
+Network visualization was possible using \textit{qgraph} package \parencite{epskamp_qgraph_2012}, with colorblind-friendly colors (blue for positive and red for negative edge weights) and nodes distinguished by their nature (blue for CTS and orange for behavioral variables).
+
+To estimate edge weights, we used non-parametric bootstrap (resampling with replacement) to create 2500 samples and estimate edge weights stability. To estimate centrality indices stability, we used case-dropping subset bootstrap samples (n = 1000). Correlation Stability coefficient for correlation values were used to measure stability of centrality indices \parencite{epskamp_estimating_2018}. CS-coefficient indicates the percentage of our sample that can be dropped to maintain, with a 95\% confidence interval, correlation values equal or above to r = 0.7 between our sample’s centrality indices and our bootstrapped samples' centrality indices.
 
 
 
-\section{Results}\label{Results}
+\section{Results}
+
+
+\begin{table}[ht] \caption{Descriptive statistics of gathered data.}
+\centering
+\begin{tabular}{lrrrrrrrrr}
+  \hline
+  vars & & n & mean & sd & min & max & range & se & type \\
+  \hline
+   1&Exploration & 9.00 & 1.56 & 0.53 & 1.00 & 2.00 & 1.00 & 0.18 & Discrete \\
+   2&Exploitation & 9.00 & 2.22 & 1.56 & 0.00 & 5.00 & 5.00 & 0.52 & Discrete \\
+   3&Flipped\_cards & 9.00 & 1.89& 0.60 & 1.00& 3.00& 2.00 & 0.20 & Discrete \\
+   4&GPT\_sourced\_Kw & 9.00 & 1.56 & 1.94 & 0.00 & 6.00 & 6.00 & 0.65 & Discrete \\
+   5&Guide\_sourced\_Kw & 9.00 & 8.33 & 2.65 & 5.00 & 12.00 & 7.00 & 0.88 & Discrete \\
+   6&Reported\_interest\_Kw & 9.00 & 2.56 & 2.40 & 0.00 & 7.00 & 7.00 & 0.80 & Discrete \\
+   7&Nonreported\_interest\_Kw & 9.00 & 7.33 & 2.35 & 4.00 & 11.00 & 7.00 & 0.78 & Discrete \\
+   8&Conversation.Duration [min] & 9.00 & 14.79 & 8.58 & 4.03 & 30.22 & 26.18 & 2.86 & Continuous \\
+   9&Creativity & 9.00 & 29.11 & 3.18 & 24.00 & 32.00 & 8.00 & 1.06 & Ordinal \\
+   10&Critical\_thinking & 9.00 & 18.89 & 3.89 & 13.00 & 25.00 & 12.00 & 1.30 & Ordinal \\
+   11&Algorithmic\_thinking & 9.00 & 16.78 & 4.02 & 11.00 & 24.00 & 13.00 & 1.34 & Ordinal \\
+   12&Cooperativity & 9.00 & 15.33 & 2.78 & 11.00 & 20.00 & 9.00 & 0.93 & Ordinal \\
+   13&Problem\_solving & 9.00 & 20.67 & 2.87 & 15.00 & 24.00 & 9.00 & 0.96 & Ordinal \\
+   14&Computational Thinking Scale score & 9.00 & 100.78 & 11.70 & 82.00 & 119.00 & 37.00 & 3.90 & Ordinal \\
+   \hline
+\end{tabular}
+\label{summary}
+\end{table}
+
+All participants completed the scenario generation task. However, one did not follow the interaction protocol and was dropped from the analysis, resulting in a sample size of n = 9. Table \ref{summary} shows the descriptive statistics for the interaction (vars 1-8) and the self-reported CTS results (vars 9-14). 
+
+\subsection{RQ1. Describing the interaction model.}
+
+\subsubsection{General observations}
+Our results shows that the interaction was somewhat short in duration (m = 14.79 minutes) and prompts (m = 3.78).  The longer interaction involved six prompts and the shorter two, providing a suggestive length for an activity of such nature. By observing the interactions, we could realize that participants were spending most of the time verbally reflecting on the generated scenarios and the novelty of the tool.  
+
+
+
+\subsubsection*{Exploration vs Exploitation efforts}
+
+
+\begin{table}  \caption{Total uses of prompt types and source of involved keywords.}
+    \centering
+    \begin{tabular}{c|cccc}   
+         Prompt type&  Total uses&  Guide-sourced Kw&  GPT-sourced Kw& \\ \hline  
+         Exploration&  14&  66&  0& \\   
+         Exploitation&  20&  9&  14& \\ 
+    \end{tabular}
+    \label{tab:Xi vs Xr}
+\end{table}
+
+
+The results show that the total count of exploitation prompts is higher than exploration prompts (Tab\ref{tab:Xi vs Xr}). As shown in Table \ref{summary}, participants employed a maximum of 2 explorations, consequently we can only distinguish between the ones that chose to explore again, and the ones that only explored one scenario. Almost every participant –except from one– executed at least one exploitation action.
+% I LEFT IT HERE
+No participant stopped at the minimum possible number of actions, generating an scenario and then choosing it without exploiting it or exploring new ones. 
+
+In Fig. 3 we can observe how most participants executed one or two explorations, with one participant exploring 3 different scenarios. In contrast, the participants showed more variability in the number of exploitations, still centered around 2-3 exploitations but with some executing more, or none.
+
+\subsubsection*{Source of Keywords}
+
+\subsubsection*{Keywords of interest}
+
+\subsubsection*{Network Analysis}
+
+Do the simpler one and then expand into the subfactors.
+
+Don't put the stability graphs
+
+\subsubsection*{Accuracy}
+
+
+
+
 
 \section{Discussion}\label{Discussion}
 
